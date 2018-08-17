@@ -12,7 +12,19 @@
   />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- Material Kit CSS -->
+
   <link href="assets/css/material-kit-canteiros.css" rel="stylesheet" />
+  <style>
+    .modal-dialog {
+              width: 580px;
+            }
+    .modal-header {
+        
+        padding:16px 16px;
+        
+        border-bottom:2px dashed #337AB7;
+     }
+    </style>
 </head>
 
 <body>
@@ -38,122 +50,105 @@
     <div class="section section-basic">
       <div class="container">
         <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-12">
             <div class="title">
               <h3>Obras/Canteiros</h3>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">
-                  <i class="material-icons">library_books</i> Casa de Pensão (Aluísio de Azevedo) 
-                <div class="ripple-container"></div></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-10">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">
-                  <i class="material-icons">library_books</i> O Ateneu (Raul Pompéia)
-                <div class="ripple-container"></div></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-10">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">
-                  <i class="material-icons">library_books</i> O Mulato (Aluísio de Azevedo)
-                <div class="ripple-container"></div></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-10">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">
-                  <i class="material-icons">library_books</i> Triste fim de Policarpo <br /> Quaresma (Lima Barreto)
-                <div class="ripple-container"></div></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-10">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal">
-                  <i class="material-icons">library_books</i> O QUINZE (Rachel de Queiroz)
-                <div class="ripple-container"></div></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-  <!-- tela que muda-->
-    <div class="row">
-          <div class="col-md-6 mr-auto ml-auto">
-            <!-- Carousel Card -->
-            <div class="card card-raised card-carousel">
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active carousel-item-left">
-                    <img class="d-block w-100" src="./assets/img/bg2.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h4>
-                        <i class="material-icons">location_on</i> Yellowstone National Park, United States
-                      </h4>
-                    </div>
+            <div class="row ">
+              <div class="col-md-4 ">
+                <div class="card">
+                  <div class="col-md-12">
+                    <button class="btn btn-block btn-primary text-left" data-toggle="modal" data-target="#myModal">
+                      <i class="material-icons">library_books</i> Casa de Pensão (Aluísio de Azevedo)
+                      <div class="ripple-container"></div></button>
                   </div>
-                  <div class="carousel-item carousel-item-next carousel-item-left">
-                    <img class="d-block w-100" src="./assets/img/bg3.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h4>
-                        <i class="material-icons">location_on</i> Somewhere Beyond, United States
-                      </h4>
-                    </div>
+
+                  <div class="col-md-12">
+                    <button class="btn btn-block btn-primary text-left" data-toggle="modal" data-target="#myModal">
+                      <i class="material-icons">library_books</i> O Ateneu (Raul Pompéia)
+                      <div class="ripple-container"></div></button>
                   </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./assets/img/bg.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h4>
-                        <i class="material-icons">location_on</i> Yellowstone National Park, United States
-                      </h4>
-                    </div>
+
+
+
+                  <div class="col-md-12">
+                    <button class="btn btn-block btn-primary text-left" data-toggle="modal" data-target="#myModal">
+                      <i class="material-icons">library_books</i> O Mulato (Aluísio de Azevedo)
+                      <div class="ripple-container"></div></button>
+                  </div>
+
+
+                  <div class="col-md-12">
+                    <button class="btn btn-block btn-primary text-left" data-toggle="modal" data-target="#myModal">
+                      <i class="material-icons">library_books</i> Triste fim de Policarpo <br /> Quaresma (Lima Barreto)
+                      <div class="ripple-container"></div></button>
+                  </div>
+
+                  <div class="col-md-12">
+                    <button class="btn btn-block btn-primary text-left" data-toggle="modal" data-target="#myModal">
+                      <i class="material-icons">library_books</i> O QUINZE (Rachel de Queiroz)
+                      <div class="ripple-container"></div></button>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <i class="material-icons">keyboard_arrow_left</i>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <i class="material-icons">keyboard_arrow_right</i>
-                  <span class="sr-only">Next</span>
-                </a>
+              </div>
+              <div class="col-md-6">
+                <!-- Carousel Card -->
+                <div class="card card-raised card-carousel">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active carousel-item-left">
+                        <img class="d-block w-100" src="./assets/img/canteiros/img1.jpeg" alt="First slide">
+                      </div>
+                      <div class="carousel-item carousel-item-next carousel-item-left">
+                        <img class="d-block w-100" src="./assets/img/canteiros/img2.jpeg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/canteiros/img3.jpeg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <i class="material-icons">keyboard_arrow_left</i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <i class="material-icons">keyboard_arrow_right</i>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Carousel Card -->
               </div>
             </div>
-            <!-- End Carousel Card -->
           </div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="img">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Fotos:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+          </button>
+        </div>
+        <div class="modal-body" >
+          <img src="./assets/img/canteiros/ateneu.jpeg" alt="O Ateneu de Raul Pompeia. Por Segundo de Informática 2017" class="img-responsive" style="width:540px">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -165,7 +160,12 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+            texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small
+            river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country,
+            in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about
+            the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of
+            Lorem Ipsum decided to leave for the far World of Grammar.
           </p>
         </div>
         <div class="modal-footer">
@@ -175,26 +175,6 @@
     </div>
   </div>
 
-   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Fotos:</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="material-icons">clear</i>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
- 
 
   <!--Direito autoral -->
   <footer class="footer footer-default">
