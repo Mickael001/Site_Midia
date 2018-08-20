@@ -33,20 +33,16 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-<<<<<<< HEAD
-            <a href="canteiros.html" class="nav-link">
-=======
             <a href="javascript:void(0)" class="nav-link" id="canteiros_btn">
->>>>>>> 45159a4b56ca7b16b8a9fa562b13d84c89973219
               <i class="material-icons">filter_vintage</i> Canteiros
             </a>
 
             <li class="nav-item">
-              <a class="nav-link" href="redação.html">
+              <a class="nav-link" href="javascript:void(0)" id="redacao_btn">
               <i class="material-icons">border_color</i> Redações
             <div class="ripple-container"></div></a></li>
             <li class="nav-item">
-              <a class="nav-link" href="biblioteca.html" onclick="scrollToDownload()">
+              <a class="nav-link" href="javascript:void(0)" id="biblioteca_btn">
               <i class="material-icons">book</i> Biblioteca
             <div class="ripple-container"></div></a></li>
             <li class="nav-item">
@@ -183,11 +179,7 @@
     </div>
 
   <!--Canteiros-->
-<<<<<<< HEAD
-  <div class="alert alert-info" >
-=======
   <div class="alert alert-info" id="canteiros_ele">
->>>>>>> 45159a4b56ca7b16b8a9fa562b13d84c89973219
         <div class="container">
           <div class="alert-icon">
             <i class="material-icons">filter_vintage</i>
@@ -281,7 +273,7 @@
   </div>
 
   <!--Biblioteca-->
-  <div class="alert alert-info">
+  <div class="alert alert-info" id="biblioteca_ele">
         <div class="container">
           <div class="alert-icon">
             <i class="material-icons">book</i>
@@ -363,7 +355,7 @@
   </div>
 
   <!--Redações-->
-  <div class="alert alert-info">
+  <div class="alert alert-info" id="redacao_ele">
         <div class="container">
           <div class="alert-icon">
             <i class="material-icons">border_color</i>
@@ -581,7 +573,22 @@
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#canteiros_ele").offset().top
     }, 2000);
-});
+    }
+    ),
+    $("#biblioteca_btn").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#biblioteca_ele").offset().top
+    }, 2000);
+    }
+    )
+    $("#redacao_btn").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#redacao_ele").offset().top
+    }, 2000);
+    }
+    )
+
+
   </script>
 </body>
 
