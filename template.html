@@ -33,7 +33,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="canteiros.html" class="nav-link">
+            <a href="javascript:void(0)" class="nav-link" id="canteiros_btn">
               <i class="material-icons">filter_vintage</i> Canteiros
             </a>
 
@@ -179,7 +179,7 @@
     </div>
 
   <!--Canteiros-->
-  <div class="alert alert-info">
+  <div class="alert alert-info" id="canteiros_ele">
         <div class="container">
           <div class="alert-icon">
             <i class="material-icons">filter_vintage</i>
@@ -322,6 +322,11 @@
       });
 
     });
+    $("#canteiros_btn").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#canteiros_ele").offset().top
+    }, 2000);
+});
   </script>
 </body>
 
